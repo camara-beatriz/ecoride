@@ -33,49 +33,53 @@
     <main>
         <!-- LEAD -->
         <section class="container">
-            <div>
-                <h1>Conheça a EcoRide!</h1>
-                <p></p>
-                <a></a>
+            <div class="container__content">
+                <h1>Conheça a <span>EcoRide</span>!</h1>
+                <p class="container__content-text">Quer saber como é pedalar de forma sustentável e prática?
+                    Preencha o formulário abaixo para reservar seu teste gratuito de uma bicicleta elétrica da EcoRide.
+                    Não perca a chance de experimentar nossa tecnologia de ponta e contribuir para um futuro mais verde!</p>
+                <a href="#formulario" class="select-button">Inscreva-se!</a>
             </div>
-            <div>
-                <img>
-            </div>
+            
+            <img src="./images/image1.jpg" alt="Imagem de bicicletas elétricas estacionadas." class="container__image">
+            
         </section>
         <!-- PRODUTO -->
-        <section id="produto">
-            <h2>Quem somos nós</h2>
-            <div>
-                <p></p>
-                <img>
-            </div>
-            <div>
-                <img>
-                <p></p>
+        <section id="produto" class="container">
+            
+            <img src="./images/image2.jpg" alt="Outra imagem de bicicletas elétricas estacionadas." class="container__image"> 
+                                          
+            <div class="container__content">
+                <h2>Quem somos nós</h2>  
+                <p class="container__content-text">EcoRide é uma startup inovadora focada em soluções de mobilidade sustentável. Nosso 
+                    principal produto é um serviço 
+                    de aluguel de bicicletas elétricas que visa reduzir a emissão de carbono e promover um estilo de vida mais saudável 
+                    nas cidades. Utilizamos tecnologia de ponta para oferecer um sistema de compartilhamento de bicicletas elétricas 
+                    fácil de usar, acessível e ecologicamente responsável.</p>
             </div>
         </section>
         <!-- EQUIPE -->
-        <section id="equipe">
+        <section id="equipe" class="container container__team">
             <h2>Conheça nossa equipe</h2>
-            <div>
+            <div class="container__content cards">
                 <div>
-                    <img>
-                    <p></p>
+                    <img src="./images/pessoa1.png" class="container__image-team">
+                    <p class="container__content-text">CEO - Ana Silva</p>
                 </div>
                 <div>
-                    <img>
-                    <p></p>
+                    <img src="./images/pessoa2.png" class="container__image-team">
+                    <p class="container__content-text">CTO - Carlos Mendes</p>
                 </div>
                 <div>
-                    <img>
-                    <p></p>
+                    <img src="./images/pessoa3.png" class="container__image-team">
+                    <p class="container__content-text">COO - Mariana Costa</p>
                 </div>
             </div>
         </section>
         <!-- FORMULÁRIO -->
         <section id="formulario">
             <div class="container form">
-                <h2 class="form__title">Preencha o formulário a seguir:</h2>
+                <h2>Preencha o formulário a seguir:</h2>
                 <form action="#" class="form__container" id="form">
 
                     <div class="form__item grid-col-span-2">
@@ -88,25 +92,24 @@
                         <input id="email" type="email" name="email" maxlength="100">
                     </div>
 
+                    <div class="form__item grid-col-span-2">
+                        <label for="city" class="form__label">Cidade:</label>
+                        <input id="city" type="text" name="city" maxlength="100">
+                    </div>
+
                     <div class="form__item">
-                        <label for="ticket-type" class="form__label">Tipo de ingresso:</label>
+                        <label for="ticket-type" class="form__label">Estado:</label>
                         <select id="ticket-type" name="ticket-type">
-                            <option value="">Tipo de ingresso</option>
-                            <option value="Pista Premium">Pista Premium</option>
-                            <option value="Pista Comum">Pista Comum</option>
-                            <option value="Cadeiras Térreo">Cadeiras Térreo</option>
-                            <option value="Cadeiras Superiores">Cadeiras Superiores</option>
-                            <option value="Rampas">Rampas</option>
+                            <option value="">Estado</option>
+                            <option value="DF">DF</option>
+                            <option value="MG">MG</option>
+                            <option value="RJ">RJ</option> 
+                            <option value="SP">SP</option>                                                       
                         </select>
                     </div>   
                     
-                    <div class="form__item">
-                        <label for="birthday" class="form__label">Data de nascimento:</label>
-                        <input id="birthday" type="date" name="birthday">
-                    </div>
-
                     <div class="form__button grid-col-span-2">
-                        <button type="submit" class="select-button">Avançar!<img src="../images/arrow_forward.svg"></button>
+                        <button type="submit" class="select-button">Inscreva-se!</button>
                     </div>
                 </form>
 
@@ -114,7 +117,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <div class="contact-us">
             <a href="./index.html"><img src="./images/logo.svg" alt="Logo da EcoRide"></a>        
             <div class="contact-us__social-media">

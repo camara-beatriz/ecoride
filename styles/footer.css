@@ -4,7 +4,7 @@
     align-items: center;
     gap: 2rem;
     padding: 1.5rem;
-    font-size: 20px;
+    font-size: 1rem;
     background-color: var(--color-black);
 }
 
@@ -54,6 +54,6 @@
 
     .disclaimer {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 }

@@ -1,0 +1,63 @@
+/* MOBILE SCREEN  */
+.form {
+    padding: 3rem 1.5rem;
+}
+
+.form__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form__button {
+    justify-self: center;
+}
+
+.form__label {
+    font-family: var(--font-text);
+    font-size: 1.13rem;
+    font-weight: 500;
+}
+
+.form__item input,
+.form__item select {
+    background-color: var(--color-white);
+    padding: 1rem;
+}
+
+/* TABLET SCREEN  */
+@media screen and (min-width: 768px) {
+    .form {
+        padding: 3rem 3.75rem;
+    }
+
+    .form__container {
+        width: 90%;
+    }
+
+    .form__title {
+        font-size: 3rem;
+    }
+}
+
+/* DESKTOP SCREEN  */
+@media screen and (min-width: 1440px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+}
