@@ -2,10 +2,136 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoRide</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css"> 
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="navbar">
+        <a href="./index.html"><img src="./images/logo.svg" alt="Logo da EcoRide"></a>
+
+        <!-- MENU HAMBURGUER -->
+        <nav class="navbar__menu">
+            <input type="checkbox" id="menu" class="navbar__menu-button">
+            <label for="menu">
+                <span class="navbar__menu-hamburguer"></span>
+            </label>
+            <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"><a href="#produto" class="navbar__menu-link">Quem Somos Nós</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="#equipe" class="navbar__menu-link">Nossa Equipe</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="#formulario" class="navbar__menu-link">Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- LEAD -->
+        <section class="container">
+            <div>
+                <h1>Conheça a EcoRide!</h1>
+                <p></p>
+                <a></a>
+            </div>
+            <div>
+                <img>
+            </div>
+        </section>
+        <!-- PRODUTO -->
+        <section id="produto">
+            <h2>Quem somos nós</h2>
+            <div>
+                <p></p>
+                <img>
+            </div>
+            <div>
+                <img>
+                <p></p>
+            </div>
+        </section>
+        <!-- EQUIPE -->
+        <section id="equipe">
+            <h2>Conheça nossa equipe</h2>
+            <div>
+                <div>
+                    <img>
+                    <p></p>
+                </div>
+                <div>
+                    <img>
+                    <p></p>
+                </div>
+                <div>
+                    <img>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <!-- FORMULÁRIO -->
+        <section id="formulario">
+            <div class="container form">
+                <h2 class="form__title">Preencha o formulário a seguir:</h2>
+                <form action="#" class="form__container" id="form">
+
+                    <div class="form__item grid-col-span-2">
+                        <label for="name" class="form__label">Nome Completo:</label>
+                        <input id="name" type="text" name="name" maxlength="100">
+                    </div>
+
+                    <div class="form__item grid-col-span-2">
+                        <label for="email" class="form__label">Email:</label>
+                        <input id="email" type="email" name="email" maxlength="100">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="ticket-type" class="form__label">Tipo de ingresso:</label>
+                        <select id="ticket-type" name="ticket-type">
+                            <option value="">Tipo de ingresso</option>
+                            <option value="Pista Premium">Pista Premium</option>
+                            <option value="Pista Comum">Pista Comum</option>
+                            <option value="Cadeiras Térreo">Cadeiras Térreo</option>
+                            <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+                            <option value="Rampas">Rampas</option>
+                        </select>
+                    </div>   
+                    
+                    <div class="form__item">
+                        <label for="birthday" class="form__label">Data de nascimento:</label>
+                        <input id="birthday" type="date" name="birthday">
+                    </div>
+
+                    <div class="form__button grid-col-span-2">
+                        <button type="submit" class="select-button">Avançar!<img src="../images/arrow_forward.svg"></button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact-us">
+            <a href="./index.html"><img src="./images/logo.svg" alt="Logo da EcoRide"></a>        
+            <div class="contact-us__social-media">
+                <p class="contact-us__title">Acesse nossas redes:</p>
+                <ul class="contact-us__list"> 
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/whatsapp.svg" alt="Logo do Whatsapp" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/twitch.svg" alt="Logo do Twitch" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/instagram.svg" alt="Logo do Instagram" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/twitter.svg" alt="Logo do Twitter" class="contact-us__link-image"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-us disclaimer">
+            <p class="contact-us__text">Desenvolvido por Beatriz.</p>
+            <p class="contact-us__text">Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
 </body>
 </html>
